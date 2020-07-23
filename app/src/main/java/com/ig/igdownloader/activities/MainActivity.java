@@ -134,29 +134,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             Log.d(TAG,"video url - " +preferences.getString("video_url",""));
         }
     }
-
-    /*private void savingVideoToPhone(String fileURL) {
-        AndroidNetworking.download(fileURL, Utils.imageDestionation(),Utils.fileName()).setPriority(Priority.MEDIUM)
-                .build().setDownloadProgressListener(new DownloadProgressListener() {
-            @Override
-            public void onProgress(long bytesDownloaded, long totalBytes) {
-                long megaBytes = 1024L * 1024L;
-                long b = bytesDownloaded/ megaBytes;
-                long c = totalBytes/megaBytes;
-                Log.d(TAG,"VIDEO ----- > " +b + "/" +c);
-                video_down.setText(b + "/" +c);
-            }
-        }).startDownload(new DownloadListener() {
-            @Override
-            public void onDownloadComplete() {
-                Toast.makeText(MainActivity.this, "Downloaded", Toast.LENGTH_SHORT).show();
-            }
-            @Override
-            public void onError(ANError anError) {
-                    anError.getErrorDetail();
-            }
-        });
-    }*/
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == MY_PERMISSIONS_REQUEST_WRITE_STORAGE) {
