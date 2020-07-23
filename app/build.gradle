@@ -31,5 +31,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
-    implementation 'com.anggrayudi:android-hidden-api:28.1'
 }
