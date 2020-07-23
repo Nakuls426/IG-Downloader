@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">IG Downloader</string>
+    <string name="paste_the_link_here">Paste the link here…</string>
+    <string name="TODO">todo</string>
+    <string name="search">Search</string>
+    <string name="video_preview">Video Preview</string>
+    <string name="download_video">Download Video</string>
+    <string name="about">About</string>
+    <string name="how_to_use">How to use</string>
+    <string name="how_to">
+        1.Copy the video URL from the instagram. \n 2.Paste the link in the search bar. \n 3.Tap on search button as soon as video loads it will show you a Preview. \n 4.Finally tap on the download button.\n\n<b>Note: All the videos will be downloaded in your internal storage inside the IGDownloader folder.</b>
+    </string>
+    <string name="about_description">An app which allows you to download videos and profile picture from Instagram in High quality.</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+    <string name="enter_username">Enter username here…</string>
+    <string name="download_photo">Download Photo</string>
+</resources>

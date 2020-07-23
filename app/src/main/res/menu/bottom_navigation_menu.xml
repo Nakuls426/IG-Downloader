@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/video_downloader"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_music_video_24"
+        android:title="@string/video"/>
+
+    <item
+        android:id="@+id/photo_downloader"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_image_24"
+        android:title="@string/photo"/>
+
+</menu>
