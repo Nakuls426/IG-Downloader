@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     SharedPreferences.Editor editor;
     BottomNavigationView navigationView;
     ProgressBar bar;
-
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +90,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                     public void onResponse(JSONObject response) {
                         Log.d(TAG,"response "+ response);
                         try {
-
                             JSONObject object = response.getJSONObject("graphql");
                             JSONObject object1 = object.getJSONObject("shortcode_media");
 
@@ -152,10 +150,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             }
         }
     }
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -198,6 +193,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
             String pasteBar = userLink.getText().toString();
             if (!TextUtils.isEmpty(pasteBar) && pasteBar.startsWith("https://www.instagram.com/")) {
                 String URL = userLink.getText().toString();
+                URL = URL.split("\\?")[0];
                 parsingURL(URL);
             } if (TextUtils.isEmpty(pasteBar))
                 Toast.makeText(MainActivity.this, "Paste url", Toast.LENGTH_SHORT).show();

@@ -7,5 +7,4 @@
     android:background="@color/colorPrimaryDark"
     app:itemTextColor="@color/primaryTextWhite"
     app:menu="@menu/bottom_navigation_menu">
-
 </com.google.android.material.bottomnavigation.BottomNavigationView>

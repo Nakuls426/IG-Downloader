@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
@@ -20,7 +19,6 @@
         android:textColor="@color/black"
         android:fontFamily="@font/hind"
         android:hint="@string/paste_the_link_here"
-        android:maxLength="40"
         android:inputType="text" />
 
  <LinearLayout
@@ -70,27 +68,21 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <VideoView
-        android:layout_gravity="center"
-        android:id="@+id/video_preview"
-        android:layout_width="1050px"
-        android:layout_height="1050px"
-        tools:ignore="PxUsage" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:gravity="bottom"
-        android:orientation="vertical">
+        android:layout_gravity="bottom">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav_view2"
+        <include
+            android:id="@+id/bottom_nav_view2"
+            layout="@layout/bottom_navigation" />
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/video_preview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        app:itemTextColor="@color/primaryTextWhite"
-        app:menu="@menu/bottom_navigation_menu" />
+        android:layout_height="720px"
+        android:layout_gravity="center"
+        tools:ignore="PxUsage" />
 
-</LinearLayout>
 </LinearLayout>

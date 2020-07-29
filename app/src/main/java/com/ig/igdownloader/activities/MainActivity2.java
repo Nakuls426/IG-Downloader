@@ -29,16 +29,16 @@ import org.json.JSONObject;
 
 public class MainActivity2 extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private static final String TAG = "MainActivity2";
-    EditText userEdit;
-    BottomNavigationView navigationView;
-    ImageView userImage;
-    TextView userName;
     public String userFullName;
     public String userBio;
     public String photo;
     public String userId;
+    EditText userEdit;
+    ImageView userImage;
+    TextView userName;
     ProgressBar progressBar;
     LinearLayout layout;
+    BottomNavigationView navigationView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -58,7 +58,6 @@ public class MainActivity2 extends AppCompatActivity implements BottomNavigation
         findViewById(R.id.linear_layout).setOnClickListener(this);
         layout = findViewById(R.id.app_linear);
     }
-
 
     private void parsingPhotoURL(String name) {
         showProgressBar();

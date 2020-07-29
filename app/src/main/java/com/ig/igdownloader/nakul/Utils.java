@@ -27,8 +27,6 @@ public class Utils extends Activity {
         return uuid.toString().substring(0,6);
     }
 
-
-
     public static String parseProfilePic(String str) {
         Matcher matcher = Pattern.compile("pictureLink: (.*?)<br>").matcher(str);
         if (matcher.find()) {

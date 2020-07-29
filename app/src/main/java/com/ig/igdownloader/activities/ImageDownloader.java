@@ -6,7 +6,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,11 +26,10 @@ import com.ig.igdownloader.ImagePreviewActivity;
 import com.ig.igdownloader.R;
 import com.ig.igdownloader.nakul.Utils;
 
-
 public class ImageDownloader extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "ImageDownloader";
     private String userId;
-
+    String picURL;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,14 +42,17 @@ public class ImageDownloader extends AppCompatActivity implements View.OnClickLi
         TextView fullName = findViewById(R.id.full_name);
         TextView userBio = findViewById(R.id.full_userbio);
         ImageView setUserPic = findViewById(R.id.user_pic);
+        picURL = getIntent().getStringExtra("USER_PIC_URL");
+        userId = getIntent().getStringExtra("USER_ID");
+        intents(fullName, userBio, setUserPic);
+        findViewById(R.id.downl_pic).setOnClickListener(this);
+    }
 
+    private void intents(TextView fullName, TextView userBio, ImageView setUserPic) {
         fullName.setText(getIntent().getStringExtra("USER_FULL_NAME"));
         userBio.setText(getIntent().getStringExtra("USER_BIO"));
-        String picURL = getIntent().getStringExtra("USER_PIC_URL");
-        userId = getIntent().getStringExtra("USER_ID");
+        picURL = getIntent().getStringExtra("USER_PIC_URL");
         new ImagePreviewActivity(picURL, setUserPic).execute();
-        findViewById(R.id.downl_pic).setOnClickListener(this);
-
     }
 
     private void gettingPicFromMainServer(final String userId) {
@@ -112,6 +113,7 @@ public class ImageDownloader extends AppCompatActivity implements View.OnClickLi
             Intent i = new Intent(ImageDownloader.this, MainActivity2.class);
             overridePendingTransition(0, 0);
             startActivity(i);
+            finish();
             return true;
         }
         return super.onOptionsItemSelected(item);
