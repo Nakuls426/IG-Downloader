@@ -68,6 +68,13 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <VideoView
+        android:id="@+id/video_preview"
+        android:layout_width="match_parent"
+        android:layout_height="720px"
+        android:layout_gravity="center"
+        tools:ignore="PxUsage" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -78,11 +85,5 @@
             layout="@layout/bottom_navigation" />
     </LinearLayout>
 
-    <VideoView
-        android:id="@+id/video_preview"
-        android:layout_width="match_parent"
-        android:layout_height="720px"
-        android:layout_gravity="center"
-        tools:ignore="PxUsage" />
 
 </LinearLayout>
