@@ -31,7 +31,7 @@
             android:name=".activities.ImageDownloader"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.HolderActivity"
+            android:name=".activities.SlideVideoActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
