@@ -4,18 +4,66 @@
     android:id="@+id/app_linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/user_edit"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:fontFamily="@font/hind"
-        android:hint="@string/enter_username"
-        android:autofillHints="@string/TODO"
-        android:inputType="text"/>
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/user_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autofillHints="@string/TODO"
+            android:background="@drawable/custom_edit"
+            android:fontFamily="@font/hind"
+            android:hint="@string/enter_username"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageButton
+            android:id="@+id/search_photo"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_baseline_arrow_forward" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/graphic_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="150dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photo_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layoutAnimation="@anim/layout_animation" />
+
+        <!--<TextView
+            android:id="@+id/graphic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/download_img_in_hd"/>-->
+
+    </FrameLayout>
 
     <LinearLayout
         tools:targetApi="23"
@@ -28,57 +76,15 @@
         android:focusable="true"
         tools:ignore="UseCompoundDrawables">
 
-        <ImageView
-            android:id="@+id/user_image"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            android:contentDescription="@string/TODO" />
-
-        <TextView
-            android:id="@+id/user_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:fontFamily="@font/hind"
-            android:hint="@string/TODO"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/black" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/search_photo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/primaryTextWhite"
-        android:fontFamily="@font/hind"
-        android:layout_gravity="end"
-        android:layout_margin="10dp"
-        android:text="@string/search"/>
+    <include
+        android:id="@+id/photo_progress_bar"
+        layout="@layout/progress_bar" />
 
-    <ProgressBar
-        android:id="@+id/progress_bar1"
+    <include
+        android:id="@+id/custom_tool_profile_pic"
+        layout="@layout/custom_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:indeterminate="true"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:gravity="bottom"
-        android:orientation="vertical">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/colorPrimaryDark"
-            app:itemTextColor="@color/primaryTextWhite"
-            app:menu="@menu/bottom_navigation_menu" />
-    </LinearLayout>
-
+        android:layout_height="wrap_content" />
 </LinearLayout>
