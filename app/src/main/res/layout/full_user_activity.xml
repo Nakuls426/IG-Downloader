@@ -1,56 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:scrollbars="horizontal"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/user_pic"
+    <TextView
+        android:id="@+id/preview_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/hind"
+        android:hint="@string/user_user_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/preview_user_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/hind"
+        android:hint="@string/user_full_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/preview_user_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/hind"
+        android:hint="@string/bio"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/preview_follower_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/hind"
+        android:hint="@string/follower_count"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/preview_following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/hind"
+        android:layout_marginTop="5dp"
+        android:hint="@string/following_count"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/preview_photo_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/hind"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/photo_avilable"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/black"
+        android:orientation="vertical" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/hind"
+        android:layout_gravity="center"
+        android:text="@string/download_photo"
+        android:textColor="@color/primaryTextWhite" />
+
+    <androidx.cardview.widget.CardView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher"
         android:layout_margin="10dp"
-        android:contentDescription="@string/TODO" />
+        app:cardCornerRadius="10dp">
 
-    <TextView
-        android:id="@+id/full_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/hind"
-        android:hint="@string/TODO"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textStyle="bold|italic"/>
+        <ImageView
+            android:id="@+id/preview_user_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_round_arrow_downward_24" />
+    </androidx.cardview.widget.CardView>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/darker_gray"/>
+    <include
+        android:id="@+id/custom_tool_image_act"
+        layout="@layout/custom_toolbar" />
 
-    <TextView
-        android:id="@+id/full_userbio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/hind"
-        android:layout_marginTop="10dp"
-        android:hint="@string/TODO"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <Button
-        android:id="@+id/downl_pic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorAccent"
-        android:textColor="@color/primaryTextWhite"
-        android:drawableEnd="@drawable/ic_round_arrow_downward_24"
-        android:layout_gravity="center"
-        android:text="@string/download_photo"/>
+    <include
+        android:id="@+id/custom_progress_bar_image_act"
+        layout="@layout/progress_bar" />
 </LinearLayout>
