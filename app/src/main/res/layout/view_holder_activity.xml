@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/cardview_default_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/button_ripple"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/hind"
+            android:text="@string/download_1"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_round_arrow_downward_24" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/play_button"
+                style="@style/roundCustomButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
