@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/normalCustomButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_ok"
+            style="@style/normalCustomButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.50dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_200" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/alert_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:text="@string/video_url"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/download"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_200"
+        android:orientation="vertical" />
+</LinearLayout>
