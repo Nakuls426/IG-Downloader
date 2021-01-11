@@ -5,4 +5,10 @@
     <color name="colorAccent">#448AFF</color>
     <color name="primaryTextWhite">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="grey_200">#e0e0e0</color>
+    <color name="grey_100">#eeeeee</color>
+    <color name="grey_50">#fafafa</color>
+    <color name="red">#f44336</color>
+    <color name="blue_grey">#cfd8dc</color>
+    <color name="button_color">#6E9EED</color>
 </resources>
