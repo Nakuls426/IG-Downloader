@@ -5,13 +5,16 @@
 
 An app which allows you to download instagram profile pictures and videos in HD quality **Without login required.**
 
-# Some Screenshots from the App
-<img src = "https://user-images.githubusercontent.com/28592882/88316802-fd9b5e00-cd35-11ea-92b4-6ad5c3582b30.jpg" width="250"/> <img src = "https://user-images.githubusercontent.com/28592882/88316812-fecc8b00-cd35-11ea-9682-c8e603fa6355.jpg" width="250"/> <img src = "https://user-images.githubusercontent.com/28592882/88316821-012ee500-cd36-11ea-833b-4e34bab8659d.jpg" width="250"/>
+### FEATURES
+* Automatically detects a video.
+* IGTV, reels, and slide videos.
+* Download profile picture in full size with high quality.
 
+# Some Screenshots from the App
+<img src = "https://i.postimg.cc/44zDXFyZ/Screenshot-2021-01-11-20-13-35-458-com-ig-igdownloader.jpg" width="250"/> <img src = "https://i.postimg.cc/5y1kHbyJ/Screenshot-2021-01-11-20-14-24-274-com-ig-igdownloader.jpg" width="250"/> <img src = "https://i.postimg.cc/wj34RWq1/Screenshot-2021-01-11-20-15-59-234-com-ig-igdownloader.jpg" width="250"/>
 
 
 **Libraries Used**
-* [Android Networking](https://github.com/amitshekhariitbhu/Fast-Android-Networking)
-* [Android Volley](https://github.com/google/volley)
-
-Enjoy! :grin:
+* [Volley](https://github.com/google/volley)
+* [CircleImageView](https://github.com/hdodenhof/CircleImageView)
+* [Glide](https://github.com/bumptech/glide)
