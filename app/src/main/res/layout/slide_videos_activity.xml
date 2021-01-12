@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include
+        android:id="@+id/custom_tool_slide_videos"
+        layout="@layout/custom_toolbar" />
+
+    <include
+        android:id="@+id/slide_videos_progress_bar"
+        layout="@layout/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="-6dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,18 +53,6 @@
             tools:ignore="ButtonStyle" />
 
     </LinearLayout>
-
-    <include
-        android:id="@+id/slide_videos_progress_bar"
-        layout="@layout/progress_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-6dp"
-        android:layout_marginBottom="-6dp" />
-
-    <include
-        android:id="@+id/custom_tool_slide_videos"
-        layout="@layout/custom_toolbar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

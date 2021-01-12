@@ -15,17 +15,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn"
-            style="?attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center"
-            android:background="@drawable/button_ripple"
-            android:backgroundTint="@color/colorAccent"
-            android:fontFamily="@font/hind"
-            android:text="@string/download_1"
-            android:textSize="14sp" />
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -46,6 +35,18 @@
                 android:layout_gravity="center" />
 
         </FrameLayout>
+
+        <Button
+            android:id="@+id/btn"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/button_ripple"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/hind"
+            android:text="@string/download_1"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
