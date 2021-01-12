@@ -6,6 +6,14 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
+    <include
+        android:id="@+id/custom_tool_main_activity"
+        layout="@layout/custom_toolbar" />
+
+    <include
+        android:id="@+id/main_progress_bar"
+        layout="@layout/progress_bar" />
+
     <EditText
         android:id="@+id/user_link"
         android:layout_width="match_parent"
@@ -18,15 +26,6 @@
         android:inputType="text"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/black" />
-
-    <include
-        android:id="@+id/main_progress_bar"
-        layout="@layout/progress_bar" />
-
-
-    <include
-        android:id="@+id/custom_tool_main_activity"
-        layout="@layout/custom_toolbar" />
 
     <Button
         android:id="@+id/search_button_main"
