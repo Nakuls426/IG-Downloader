@@ -6,7 +6,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/cancel"
@@ -18,6 +19,11 @@
             android:textAllCaps="true"
             android:textStyle="bold" />
 
+        <View
+            android:layout_width="0.50dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_200" />
+
         <Button
             android:id="@+id/button_ok"
             style="@style/normalCustomButton2"
@@ -26,12 +32,6 @@
             android:layout_weight="1"
             android:text="@string/ok"
             android:textStyle="bold" />
-
-        <View
-            android:layout_width="0.50dp"
-            android:layout_height="match_parent"
-            android:background="@color/grey_200" />
-
     </LinearLayout>
 
     <TextView
@@ -56,11 +56,4 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="0.20dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/grey_200"
-        android:orientation="vertical" />
 </LinearLayout>
