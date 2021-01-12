@@ -6,6 +6,33 @@
     android:orientation="vertical"
     tools:context=".activities.MainActivity">
 
+    <Button
+        android:id="@+id/search_button_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="4dp"
+        android:fontFamily="@font/hind"
+        android:text="@string/search"
+        android:textColor="@color/primaryTextWhite"
+        android:textStyle="bold"
+        tools:ignore="ButtonStyle" />
+
+    <EditText
+        android:id="@+id/user_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:autofillHints="@string/TODO"
+        android:background="@drawable/custom_edit"
+        android:fontFamily="@font/hind"
+        android:hint="@string/paste_the_link_here"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -18,38 +45,9 @@
         android:id="@+id/main_progress_bar"
         layout="@layout/progress_bar" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/search_button_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/colorAccent"
-            android:elevation="4dp"
-            android:fontFamily="@font/hind"
-            android:text="@string/search"
-            android:textColor="@color/primaryTextWhite"
-            android:textStyle="bold"
-            tools:ignore="ButtonStyle" />
-
-        <EditText
-            android:id="@+id/user_link"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:autofillHints="@string/TODO"
-            android:background="@drawable/custom_edit"
-            android:fontFamily="@font/hind"
-            android:hint="@string/paste_the_link_here"
-            android:inputType="text"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="@color/black" />
-    </LinearLayout>
+    <include
+        android:id="@+id/custom_tool_main_activity"
+        layout="@layout/custom_toolbar" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,9 +56,5 @@
         android:layout_marginTop="10dp"
         android:text="@string/search_things"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <include
-        android:id="@+id/custom_tool_main_activity"
-        layout="@layout/custom_toolbar" />
 
 </LinearLayout>

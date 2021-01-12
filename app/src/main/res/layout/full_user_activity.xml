@@ -6,6 +6,31 @@
     android:scrollbars="horizontal"
     android:layout_height="match_parent">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/preview_user_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_round_arrow_downward_24" />
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/custom_progress_bar_image_act"
+        layout="@layout/progress_bar" />
+
+    <include
+        android:id="@+id/custom_tool_image_act"
+        layout="@layout/custom_toolbar" />
+
     <TextView
         android:id="@+id/preview_user_name"
         android:layout_width="wrap_content"
@@ -96,28 +121,4 @@
         android:text="@string/download_photo"
         android:textColor="@color/primaryTextWhite" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="10dp">
-
-        <ImageView
-            android:id="@+id/preview_user_pic"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/todo"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_round_arrow_downward_24" />
-    </androidx.cardview.widget.CardView>
-
-    <include
-        android:id="@+id/custom_tool_image_act"
-        layout="@layout/custom_toolbar" />
-
-    <include
-        android:id="@+id/custom_progress_bar_image_act"
-        layout="@layout/progress_bar" />
 </LinearLayout>

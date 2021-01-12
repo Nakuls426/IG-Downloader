@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/custom_tool_profile_pic"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/photo_progress_bar"
+        layout="@layout/progress_bar" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -55,36 +65,7 @@
             android:layout_marginEnd="5dp"
             android:layoutAnimation="@anim/layout_animation" />
 
-        <!--<TextView
-            android:id="@+id/graphic_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/download_img_in_hd"/>-->
-
     </FrameLayout>
 
-    <LinearLayout
-        tools:targetApi="23"
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:contextClickable="true"
-        android:clickable="true"
-        android:focusable="true"
-        tools:ignore="UseCompoundDrawables">
 
-    </LinearLayout>
-
-    <include
-        android:id="@+id/photo_progress_bar"
-        layout="@layout/progress_bar" />
-
-    <include
-        android:id="@+id/custom_tool_profile_pic"
-        layout="@layout/custom_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 </LinearLayout>

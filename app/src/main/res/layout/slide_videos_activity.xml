@@ -10,21 +10,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/search_video_slide"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:backgroundTint="@color/colorAccent"
-            android:elevation="4dp"
-            android:fontFamily="@font/hind"
-            android:text="@string/search"
-            android:textColor="@color/primaryTextWhite"
-            android:textStyle="bold"
-            tools:ignore="ButtonStyle" />
-
         <EditText
             android:id="@+id/paste_link"
             android:layout_width="match_parent"
@@ -40,19 +25,22 @@
             android:inputType="textUri"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
+        <Button
+            android:id="@+id/search_video_slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="4dp"
+            android:fontFamily="@font/hind"
+            android:text="@string/search"
+            android:textColor="@color/primaryTextWhite"
+            android:textStyle="bold"
+            tools:ignore="ButtonStyle" />
+
     </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layoutAnimation="@anim/layout_animation" />
-
-    <include
-        android:id="@+id/custom_tool_slide_videos"
-        layout="@layout/custom_toolbar" />
 
     <include
         android:id="@+id/slide_videos_progress_bar"
@@ -61,5 +49,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-6dp"
         android:layout_marginBottom="-6dp" />
+
+    <include
+        android:id="@+id/custom_tool_slide_videos"
+        layout="@layout/custom_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layoutAnimation="@anim/layout_animation" />
 
 </LinearLayout>
