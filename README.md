@@ -83,7 +83,7 @@ https://instagram-unofficial-api.herokuapp.com/unofficial/api/video?link={link}
 {
 "shortcode": "CHFJeEFpmyi",
 "video_url": "https://scontent-iad3-1.cdninstagram.com/v/t50.2886-16/123601353_723747584893741_745250004650353999_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5jYXJvdXNlbF9pdGVtLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=101&_nc_ohc=_brOpQEl-z4AX-sImSh&vs=17884102927802277_4250235783&_nc_vs=HBksFQAYJEdNa0JYZ2N0WTdTZFBwSUNBRS1sQ2tUdXFGY0tia1lMQUFBRhUAAsgBABUAGCRHUEdFWEFkanFCNF9BUjREQURGVE1jX2xzTVFfYmtZTEFBQUYVAgLIAQAoABgAGwGIB3VzZV9vaWwBMBUAACbKpqmL5t%2FEPxUCKAJDMywXQBN2yLQ5WBAYEmRhc2hfYmFzZWxpbmVfMV92MREAde4HAA%3D%3D&oe=6047635F&oh=828a6ac6145966da38d85a06c81140fd",
-thumbnail: "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/123431188_770278860272937_6023676883947642385_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=uxXTADWPIfwAX9y55Hi&oh=d1db8b15c6a6174d172ce17425245e7d&oe=60471F3B"
+"thumbnail": "https://scontent-iad3-1.cdninstagram.com/v/t51.2885-15/e35/123431188_770278860272937_6023676883947642385_n.jpg?tp=1&_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=uxXTADWPIfwAX9y55Hi&oh=d1db8b15c6a6174d172ce17425245e7d&oe=60471F3B"
 "..."
 }]
 }
@@ -118,12 +118,9 @@ https://instagram-unofficial-api.herokuapp.com/unofficial/api/topsearch?query={u
 "is_restricted": false,
 "following": false,
 "outgoing_request": false,
-"is_bestie": false
+"is_bestie": false}
 }
-}
-},...
-]
-}
+}]}
 ```
 **Libraries Used**
 * [Volley](https://github.com/google/volley)
