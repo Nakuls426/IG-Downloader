@@ -277,16 +277,3 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         }
     }
 }
-
-/*private void handleIncomingData(Intent intent) {
-        String action = intent.getAction();
-        String type = intent.getType();
-        if (Intent.ACTION_SEND.equals(action) && type != null){
-            if ("text/plain".equals(type)) {
-                Log.d(TAG,"incoming data : " +intent.getClipData());
-                String parse = intent.getClipData().toString().substring(25).split("\\?")[0];
-                parsingURL(parse);
-                Log.d(TAG,"incoming parsed URL : "+parse);
-            }
-        }
-    }*/
